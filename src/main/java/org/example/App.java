@@ -67,6 +67,11 @@ public class App
         System.out.println("Login Validator is working: "+(validateLogin("5IS15PeMuster")));
         System.out.println("Login Validator is working: "+(validateLogin("5IA16PeMuster")));
         System.out.println("Login Validator is working: "+(!validateLogin("BA5IA16PeMuster")));
+
+        System.out.println("Phone Validator is working: "+(validatePhone("+1 234 567 8901")));
+        System.out.println("Phone Validator is working: "+(validatePhone("0041 234 567 89 01")));
+        System.out.println("Phone Validator is working: "+(validatePhone("+1 (234) 56 89 901")));
+        System.out.println("Phone Validator is working: "+(!validatePhone("+1/234/567/8901-000")));
     }
 
     public static boolean validateEmail(String string){
@@ -119,8 +124,12 @@ public class App
     }
 
     public static boolean validateLogin(String string){
-        // 5IS15PeMuster,
         String pattern = "^[0-9]{1}[A-Z]{2}[0-9]{2}[a-zA-zZ]{2,}$";
         return string.matches(pattern);
+    }
+    
+    public static boolean validatePhone(String string){
+        String pattern = "^(\\+|00)[0-9]{1,3}(\\([0-9]{3}\\)[0-9]{7}|[0-9]{10,11})$";
+        return string.replace(" ", "").matches(pattern);
     }
 }
