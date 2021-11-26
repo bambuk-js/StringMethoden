@@ -3,10 +3,9 @@
 ## Ouput
 
 ```
-
-Password: qGna-dd.(-nSN9
-Password: LUly-KqCs-Txsc
-Password: Iyd3-%oEF-&pX2
+Password: (UC9-VO1c-sDIL
+Password: 5E(f-uHkM-Yz&H
+Password: Ek*t-.4&A-gmnp
 Email Validator is working: true
 Email Validator is working: true
 Email Validator is working: true
@@ -23,4 +22,7 @@ Mac Validator is working: true
 Mac Validator is working: true
 Mac Validator is working: true
 Mac Validator is working: true
+Login Validator is working: true
+Login Validator is working: true
+Login Validator is working: true
 ```
