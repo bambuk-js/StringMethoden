@@ -3,9 +3,10 @@
 ## Ouput
 
 ```
-Password: kdtM-*uCI-VBiJ
-Password: JICI-Iht9-K(kO
-Password: ZgrW-p4m4-8U.I
+
+Password: qGna-dd.(-nSN9
+Password: LUly-KqCs-Txsc
+Password: Iyd3-%oEF-&pX2
 Email Validator is working: true
 Email Validator is working: true
 Email Validator is working: true
@@ -18,4 +19,8 @@ Time Validator is working: true
 Ip Validator is working: true
 Ip Validator is working: true
 Ip Validator is working: true
+Mac Validator is working: true
+Mac Validator is working: true
+Mac Validator is working: true
+Mac Validator is working: true
 ```

@@ -58,6 +58,11 @@ public class App
         System.out.println("Ip Validator is working: "+(validateIp("192.168.1.1")));
         System.out.println("Ip Validator is working: "+(validateIp("192.168.1.255")));
         System.out.println("Ip Validator is working: "+(!validateIp("1.1.1.01")));
+
+        System.out.println("Mac Validator is working: "+(validateMac("01-23-45-67-89-AB")));
+        System.out.println("Mac Validator is working: "+(validateMac("01:23:45:67:89:AB")));
+        System.out.println("Mac Validator is working: "+(validateMac("0123.4567.89AB")));
+        System.out.println("Mac Validator is working: "+(!validateMac("01-23-45-67-89-AH")));
     }
 
     public static boolean validateEmail(String string){
@@ -106,6 +111,19 @@ public class App
         if(string.matches(pattern)){
             return true;
         }
+        return false;
+    }
+
+    public static boolean validateMac(String string){
+        String pattern = "^([0-9A-Fa-f]{2}[:-])"
+                + "{5}([0-9A-Fa-f]{2})|"// | => fallback
+                + "([0-9a-fA-F]{4}\\."
+                + "[0-9a-fA-F]{4}\\."
+                + "[0-9a-fA-F]{4})$";
+        if(string.matches(pattern)){
+            return true;
+        }
+
         return false;
     }
 }
