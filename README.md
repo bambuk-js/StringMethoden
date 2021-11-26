@@ -29,4 +29,7 @@ Phone Validator is working: true
 Phone Validator is working: true
 Phone Validator is working: true
 Phone Validator is working: true
+ISBN Validator is working: true
+ISBN Validator is working: true
+ISBN Validator is working: true
 ```

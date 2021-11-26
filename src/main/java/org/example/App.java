@@ -72,6 +72,10 @@ public class App
         System.out.println("Phone Validator is working: "+(validatePhone("0041 234 567 89 01")));
         System.out.println("Phone Validator is working: "+(validatePhone("+1 (234) 56 89 901")));
         System.out.println("Phone Validator is working: "+(!validatePhone("+1/234/567/8901-000")));
+
+        System.out.println("ISBN Validator is working: "+(validateISBN("3-8274-0599-8")));
+        System.out.println("ISBN Validator is working: "+(validateISBN("3827405998")));
+        System.out.println("ISBN Validator is working: "+(!validateISBN("38274059980")));
     }
 
     public static boolean validateEmail(String string){
@@ -131,5 +135,11 @@ public class App
     public static boolean validatePhone(String string){
         String pattern = "^(\\+|00)[0-9]{1,3}(\\([0-9]{3}\\)[0-9]{7}|[0-9]{10,11})$";
         return string.replace(" ", "").matches(pattern);
+    }
+
+    public static boolean validateISBN(String string){
+        // 3-8274-0599-8, 3827405998
+        String pattern = "^([0-9]{10})|([0-9]{1}\\-([0-9]{4}\\-){2}[0-9]{1})$";
+        return string.matches(pattern);
     }
 }
