@@ -1,11 +1,11 @@
 # StringMethoden
 
-## Ouput
+## Debugger Output
 
 ```
-Password: (UC9-VO1c-sDIL
-Password: 5E(f-uHkM-Yz&H
-Password: Ek*t-.4&A-gmnp
+Password: S.FF-%(5r-O(qL
+Password: gZXI-V6Dn-D.hB
+Password: ideA-j2a1-xxls
 Email Validator is working: true
 Email Validator is working: true
 Email Validator is working: true
@@ -25,4 +25,8 @@ Mac Validator is working: true
 Login Validator is working: true
 Login Validator is working: true
 Login Validator is working: true
+Phone Validator is working: true
+Phone Validator is working: true
+Phone Validator is working: true
+Phone Validator is working: true
 ```
