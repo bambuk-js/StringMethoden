@@ -13,10 +13,6 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println("Password: "+generatePassword());
-        System.out.println("Password: "+generatePassword());
-        System.out.println("Password: "+generatePassword());
-
         validateString();
     }
     public static String generatePassword(){
@@ -43,6 +39,10 @@ public class App
     }
 
     public static void validateString(){
+        System.out.println("Password: "+generatePassword());
+        System.out.println("Password: "+generatePassword());
+        System.out.println("Password: "+generatePassword());
+
         System.out.println("Email Validator is working: "+(validateEmail("peter.muster@lernende.bbw.ch")));
         System.out.println("Email Validator is working: "+(validateEmail("bb@bb.ch")));
         System.out.println("Email Validator is working: "+(!validateEmail("bb@bbch")));
