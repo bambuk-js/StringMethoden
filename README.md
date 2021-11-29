@@ -3,9 +3,9 @@
 ## Debugger Output
 
 ```
-Password: S.FF-%(5r-O(qL
-Password: gZXI-V6Dn-D.hB
-Password: ideA-j2a1-xxls
+Password: bJ88-2u2m-Vu9V
+Password: bMML-q9W1-tH&U
+Password: LqM.-X*j.-iqAH
 Email Validator is working: true
 Email Validator is working: true
 Email Validator is working: true
@@ -32,4 +32,7 @@ Phone Validator is working: true
 ISBN Validator is working: true
 ISBN Validator is working: true
 ISBN Validator is working: true
+Post Validator is working: true
+Post Validator is working: true
+Post Validator is working: true
 ```

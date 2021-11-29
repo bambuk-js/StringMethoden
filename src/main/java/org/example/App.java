@@ -76,6 +76,10 @@ public class App
         System.out.println("ISBN Validator is working: "+(validateISBN("3-8274-0599-8")));
         System.out.println("ISBN Validator is working: "+(validateISBN("3827405998")));
         System.out.println("ISBN Validator is working: "+(!validateISBN("38274059980")));
+
+        System.out.println("Post Validator is working: "+(validatePost("84-47123-01")));
+        System.out.println("Post Validator is working: "+(validatePost("84-471234-1")));
+        System.out.println("Post Validator is working: "+(!validatePost("8447123401")));
     }
 
     public static boolean validateEmail(String string){
@@ -140,6 +144,12 @@ public class App
     public static boolean validateISBN(String string){
         // 3-8274-0599-8, 3827405998
         String pattern = "^([0-9]{10})|([0-9]{1}\\-([0-9]{4}\\-){2}[0-9]{1})$";
+        return string.matches(pattern);
+    }
+
+    public static boolean validatePost(String string){
+        // 84-47123-01, 84-471234-1
+        String pattern = "^[0-9]{2}\\-[0-9]{4,6}\\-[0-9]{1,2}$";
         return string.matches(pattern);
     }
 }
